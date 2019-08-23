@@ -5,10 +5,18 @@ body{
 	background-color: #F5F5F5;
 }
 
+fieldset{
+  background-color: #FFFFFF;
+  float: left;
+  border: 0;
+}
+
 h1{ 
 	color: #000000;
 	font-size: 30px;
 	margin: 5px;
+	font-weight: bold;
+	text-align: center;
 }
 
 h3{
@@ -27,43 +35,21 @@ h4 {
 	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	margin-left: 3px;
 }
 
-fieldset{
-  background-color: #FFFFFF;
-  float: left;
-  border: 0;
-}
-
-#rightContent{
-  background-color: #FFFFFF;
-  float: left;
-  border: 0;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#leftContent {
-	background-color: #F5F5F5;
-	list-style: none;
-	width: 20%; 
-}
-
-
-#personalInfo {
-	list-style: none; 	/* quitarle los puntos a la lista */
-	padding: 10px;
-	margin: 3px;
-}
 
 img {
   border-radius: 50%;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 hr {
 	border-top: 2px dashed #FFD700;
+	margin-left: 0px;
 	margin: 10px;
 }
+
 
 ul {
 	margin-top: 3px;
@@ -79,17 +65,59 @@ p {
 	padding-top: 0px;
 	margin-top: -2px;
 	margin-bottom: 1px;
-	color: #A9A9A9;
+	margin-left: 3px;
+	color: #A9A9A9;	
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding: 0px 0px 4px 10px;
+  font-weight: 400;
 }
 
 #skillsList {
 	list-style: none;
 	padding: 0px;
+	margin-left: 3px;
+	margin-top: 5px;
 
 
+}
+
+#rightContent{
+  background-color: #FFFFFF;
+  float: left;
+  border: 0;
+  padding: 20px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#leftContent {
+	background-color: #F5F5F5;
+	list-style: none;
+	width: 20%; 
+}
+
+
+#personalInfo {
+	list-style: none; 	/* quitarle los puntos a la lista */
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 3px;
 }
 
 .skillItem {
 	margin: 0px;
 }
-	
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
