@@ -1,0 +1,82 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	/*font-family: Verdana*/
+	font-size: 13px;
+	color: #6d6d6d;
+	background-color: #FFF0F5;
+
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 2px;
+	color: #6d6d6d;
+}
+
+fieldset{
+	background-color: #FFFFFF;
+	width: 50%;
+	margin:auto;
+	border: 0;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+	text-align: center;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+ul li {
+	list-style: none;
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 16px;
+	font-size: 18px;
+	transition: 0.2s;
+
+  /* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul li:hover {
+	background: #ddd;
+}
+
+ul li.checked {
+	background: #888;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+
+input {
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	background: #F5F5F5;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+
+}
+
+div {
+	cursor: pointer;
+	text-align:center
+}
+
+.header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
