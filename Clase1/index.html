@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<h1>Registry Form</h1>
+	</header>
+	<nav>
+		<ul id="menu">
+			<li id="home">Home</li>
+			<li id="about">About the site</li>
+			<li id="registry" class="selected">Registry</li>
+			<li id="contact">Contact</li>
+			<li id="copyright">Copyright</li>
+
+		</ul>
+	</nav>
+	<section id="home_section" class="hidden">home section!</section>
+	<section id="about_section" class="hidden">about section!</section>
+	<section id="registry_section" class="hidden"></section>
+
+	<section>
+		<fieldset>
+			<legend>New account registry</legend>
+			<span id="information">
+				Your information is safe with us
+			</span>
+			<label>Complete Name: </label>
+			<br>
+			<input id= "name" type="text" class = "formElement" name="Name" placeholder="Tu nombre"/>
+			<span id="name_error" class="error hidden">El nombre no puede estar vacio</span>
+
+
+			<br><br>
+
+			<label>Email</label>
+			<br>
+			<input id="email" type="text" class = "formElement" name="Email"/>
+			<span id="email_error" class="error hidden">El email no puede estar vacio</span>
+
+			<br><br>
+
+			<label>Password</label>
+			<br>
+			<input id= "password" type="password"  class = "formElement" name="password"/>
+			<span id="password_error" class="error hidden">El password no puede estar vacio</span>
+
+			<br><br>
+
+			<label>Password confirmation</label>
+			<br>
+			<input id="password_confirmation" type="password" class = "formElement" name="password_confirmation"/>
+			<span id="password_confirmation_error" class="error hidden">El password no puede estar vacio</span>
+
+			<br><br>
+
+			<label for="country">Country</label>
+			<br>
+			<select id="country" class="formElement">
+
+				<option value="0">Select a country</option>
+				<option value="1">Mexico</option>
+				<option value="2">Brazil</option>
+				<option value="3">Canada</option>
+			</select>
+			<span id="country_error" class="error hidden">Escoge un pais</span>
+			
+			<br><br>
+			
+			<label id="gender">Gender</label>
+			<span id="gender_error" class = "error hidden">Elige un genero</span>
+			<br>
+			<input type="radio" name="gender" value="M">Male
+			<br>
+			<input type="radio" name="gender" value="F">Female
+
+			<br><br>
+
+			<div>
+				<button id="Submit" class="btnSubmit">Submit</button>
+				<button id="Cancel" class="btnCancel">Cancel</button>						
+			</div>
+
+		</fieldset>		
+	</section>
+	<section id="contact_section"></section>
+	<section id="copyright_section"></section>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  	<script type="text/javascript" src="JS/scriptJQ.js"></script>
+
+</body>
+</html>
